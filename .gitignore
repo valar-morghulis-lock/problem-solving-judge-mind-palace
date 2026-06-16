@@ -1,0 +1,67 @@
+# =========================================================================
+# Spring Boot & Build Tools Core
+# =========================================================================
+target/
+build/
+.gradle/
+.mvn/wrapper/maven-wrapper.jar
+
+# Keep tracking source files even if directory names contain target/build flags
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# =========================================================================
+# System Security & Local Configurations (Crucial for microservices)
+# =========================================================================
+.env
+*.local
+src/main/resources/application-local.yml
+src/main/resources/application-local.properties
+
+# =========================================================================
+# IDE Specific Caches & Configurations
+# =========================================================================
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### VS Code ###
+.vscode/
+*.code-workspace
+
+### STS / Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# =========================================================================
+# OS Generated Files
+# =========================================================================
+    Thumbs.db
+.DS_Store
+
+# =========================================================================
+# Future Judge Execution Engine Sandbox Artifacts
+# =========================================================================
+# If your local worker processes write temp user code files to disk 
+# during development, this prevents committing submissions to GitHub.
+*.tmp
+*.class
+*.exe
+*.o
